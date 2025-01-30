@@ -1,18 +1,29 @@
 # GymClass-MySQL
 
-Web app to sign up for gym classes. You will need MySQL installed on your computer.
+A web app for managing gym class reservations, allowing users to view schedules, reserve classes, track attendance, and manage memberships.
 
 ## Technologies Used
 
--   **Frontend**: React, TailwindCSS, MaterialUI
--   **Backend**: Node.js, Express
--   **Database**: MySQL
+- **Frontend**: React, React Router, Tailwind CSS, Material-UI, Vite
+- **Backend**: Node.js, Express, MySQL2
+- **Authentication**: JWT, bcrypt
+- **Database**: MySQL 
+- **Scheduling**: Node-Cron for monthly membership updates.
 
 ## Features
 
--   User authentication
--   CRUD operations
--   Responsive design
+- **User Authentication**: Sign up, log in, and logout functionality with JWT tokens.
+- **Class Reservation**: 
+  - View weekly class schedules with coach and time details.
+  - Reserve or cancel classes.
+  - Real-time updates on remaining membership days.
+- **Attendance Tracking**: 
+  - View upcoming classes and attendance history in paginated tables.
+- **Profile Management**: 
+  - Edit user profile (name, email, password).
+  - Upgrade/downgrade membership plans (changes apply in the next billing cycle).
+- **Responsive UI**: Built with Tailwind CSS and Material-UI for consistent styling across devices.
+- **Automatic Membership Reset**: Monthly cron job to reset class allowances based on membership type.
 
 ## Installation
 
